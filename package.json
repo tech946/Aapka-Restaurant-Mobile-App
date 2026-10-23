@@ -1,0 +1,14 @@
+{
+  "name": "aapka-mobile",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "team": "npm run start --workspace aapka-team",
+    "team:web": "npm run web --workspace aapka-team",
+    "typecheck": "npm run typecheck --workspaces --if-present",
+    "lint": "npm run lint --workspaces --if-present"
+  }
+}
